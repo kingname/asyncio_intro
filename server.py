@@ -11,6 +11,6 @@ def index():
 
 
 @app.get('/sleep/{num}')
-async def sleep(num: int):
+def sleep(num: int):
     time.sleep(num)
     return {'success': True, 'msg': f'等待时间: {num}秒。'}

@@ -14,10 +14,6 @@ async def main():
     task1 = do_request(3)
     task2 = do_request(5)
     task3 = do_request(8)
-    task4 = do_request(8)
-    task5 = do_request(8)
-    task6 = do_request(8)
-    task7 = do_request(8)
     task_list = [task1, task2, task3]
     await asyncio.gather(*task_list)
     end = time.time()
